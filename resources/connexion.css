@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #f5f7fa 100%);
+    color: #333;
+}
+
+form {
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    border: 1px solid #e1e4e8;
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+.from-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.from-header h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.msg {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.msg.error {
+    background-color: #fff1f0;
+    color: #d9534f;
+    border: 1px solid #fde3e1;
+}
+
+.msg.success {
+    background-color: #f6ffed;
+    color: #28a745;
+    border: 1px solid #d9f7be;
+}
+
+.form-body {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e1e4e8;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #495057;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.form-group input[type="submit"]:hover {
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group p {
+    text-align: center;
+    margin-top: 15px;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.link {
+    color: #3498db;
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    form {
+        max-width: 90%;
+        padding: 30px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        padding: 25px 20px;
+    }
+    
+    .from-header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Professional Hover and Focus States */
+input:hover,
+.form-group input[type="submit"]:focus {
+    transition: all 0.3s ease;
+}

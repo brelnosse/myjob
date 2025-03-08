@@ -1,0 +1,333 @@
+/* *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding-top: 80px;
+}
+nav{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-indent: 15px;
+    height: 80px;
+    font-size: 1.7em;
+}
+nav a{
+    padding: 20px;
+    color: #333;
+}
+.container{
+    display: flex;
+    flex-direction: column;   
+    background-color: #33333318;
+    align-items: center;
+    padding: 20px 20px;
+}
+.container h2{
+    font-size: 3em;
+    text-transform: capitalize;
+    color: #333;
+    margin: 20px 0px;
+    font-family: calibri;
+}
+.container img{
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 3px;
+}
+.pay_methods{
+    display: flex;
+    gap: 2px;
+    margin: 5px 0px;
+    margin-bottom: 20px;
+}
+.pay_methods .meth{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+.pay_methods .meth span{
+    font-size: 1.1em;
+    font-family: calibri;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 462px;
+    background-color: transparent;
+}
+.inputs .input-group{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.inputs .input-group label{
+    font-family: calibri;
+    font-size: 1.1em;
+    background-color: transparent;
+    margin: 10px 0px;
+}
+.inputs .input-group input{
+    height: 40px;
+    width: calc(100% - 22px);
+    border-radius: 5px;
+    padding-left: 20px;
+    font-family: calibri;
+    font-size: 1.1em;
+    border: 1px solid #999;
+    background-color: white;
+}
+.inputs .input-group input[type="submit"]{
+    padding: 0;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #333;
+    height: 50px;
+    border: 2px solid #333;
+    transition: all 0.3s;
+}
+.inputs .input-group input[type="submit"]:hover{
+    background-color: #333;
+    color: white;
+}
+.msg{
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: calibri;
+    box-shadow: 0px 0px 8px 8px rgb(0,0,0,0.02);
+}
+.msg.error{
+    color: rgb(118, 0, 0);
+    background-color: rgba(255, 0, 0, 0.322);
+}
+.msg.success{
+    color: rgb(3, 125, 60);
+    background-color: rgba(0, 255, 157, 0.158);
+}
+@media screen and (max-width: 500px){
+    .inputs{
+        width: 100%;
+    }
+    .inputs .input-group input{
+        /* width: 100%; 
+    }
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #f5f7fa 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+.goToappMenu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.arrowLeft {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.arrowLeft:hover {
+    color: #2980b9;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    border: 1px solid #e1e4e8;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+.msg {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.msg.error {
+    background-color: #fff1f0;
+    color: #d9534f;
+    border: 1px solid #fde3e1;
+}
+
+.msg.success {
+    background-color: #f6ffed;
+    color: #28a745;
+    border: 1px solid #d9f7be;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.pay_methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.meth {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #e1e4e8;
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.meth:hover {
+    border-color: #3498db;
+}
+
+.meth img {
+    max-width: 100px;
+    max-height: 80px;
+    margin-bottom: 10px;
+}
+
+.meth span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.meth input[type="radio"] {
+    margin-right: 10px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    color: #495057;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+.input-group input[type="text"]:disabled {
+    background-color: #f9f9f9;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+.input-group input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.input-group input[type="submit"]:hover {
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 30px 25px;
+    }
+
+    .pay_methods {
+        flex-direction: column;
+    }
+
+    .meth {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}

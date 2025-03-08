@@ -1,0 +1,327 @@
+:root {
+    --primary-color: #3498db;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --white: #ffffff;
+}
+/* .container{
+    background-color: ;
+} */
+body {
+    background-color:#f5f7fa;
+}
+.postsContainer {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.post {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.post:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.postHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leftSide img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+}
+
+.pseudo {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.email {
+    color: var(--light-text);
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.PostedDate {
+    color: var(--light-text);
+    font-size: 0.8rem;
+}
+
+.postBody {
+    padding: 15px;
+}
+
+.imgContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.imgContainer img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.textContainer {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.msg {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 500px;
+}
+.msg.error {
+    background-color: #fff1f0;
+    color: #d9534f;
+    border: 1px solid #fde3e1;
+}
+
+.msg.success {
+    background-color: #f6ffed;
+    color: #28a745;
+    border: 1px solid #d9f7be;
+}
+h3.stitle{
+    background-color: #333;
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 1.4em;
+}
+
+.container .infos{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+}
+.info-group img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e1e4e8;
+}
+.info-group{
+    position: relative;
+}
+.info-group label[for="pp"]{ 
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.info-group label[for="pp"]:hover{ 
+    opacity: 1;
+}
+.info-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.info-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #495057;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.info-group input:not(input[type='submit']){
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    /* text-transform: uppercase; */
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.info-group input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.info-group input[type="submit"]:hover {
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.scontainer {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.scontainer:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.scontainer h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.scontainer .price {
+    display: block;
+    font-size: 2rem;
+    color: #3498db;
+    font-weight: 700;
+    margin: 20px 0;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.scontainer h3 {
+    color: #34495e;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.scontainer h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.scontainer ul {
+    list-style-type: none;
+    margin: 20px 0;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.scontainer ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.scontainer ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.scontainer .link-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scontainer .link-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 20px;
+        width: calc(100% - 20px);
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    .container ul {
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .infos {
+        max-width: 90%;
+        padding: 30px 25px;
+    }
+}
